@@ -14,7 +14,7 @@
     <meta property="og:title" content="Al-Hayath Haj &amp; Umrah Service | Sacred Journeys Guided with Trust">
     <meta property="og:description" content="Dedicated Haj &amp; Umrah packages with Aalims guidance, luxury hotels near Haram, and complete ground support.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1513072064285-240f87fa81e8?auto=format&fit=crop&w=1200&q=80">
-    <meta name="theme-color" content="#091812">
+    <meta name="theme-color" content="#06110c">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -396,13 +396,6 @@
         .btn-sm {
             padding: 9px 20px;
             font-size: 0.86rem;
-        }
-
-        .btn-icon {
-            width: 44px;
-            height: 44px;
-            padding: 0;
-            border-radius: 50%;
         }
 
         /* 3D Tilt Card Base */
@@ -928,15 +921,9 @@
         }
 
         @keyframes float3d {
-            0% {
-                transform: translateY(0) rotate(0deg);
-            }
-            50% {
-                transform: translateY(-14px) rotate(1.5deg);
-            }
-            100% {
-                transform: translateY(0) rotate(0deg);
-            }
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-14px) rotate(1.5deg); }
+            100% { transform: translateY(0) rotate(0deg); }
         }
 
         /* ==========================================================================
@@ -1063,7 +1050,7 @@
         }
 
         /* ==========================================================================
-           8. PACKAGES SECTION (INTERACTIVE SLIDE CARDS & TIER FILTER)
+           8. PACKAGES SECTION (EXACTLY 3 PACKAGES: ECONOMY, HILTON, VIP)
            ========================================================================== */
         .packages-section {
             padding: 130px 0;
@@ -1100,12 +1087,12 @@
 
         .pkg-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 26px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
         }
 
         .pkg-card {
-            padding: 38px 28px 32px;
+            padding: 42px 32px 36px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -1136,29 +1123,36 @@
             border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
+        .pkg-badge.vip {
+            background: var(--gold-gradient);
+            color: #0c1811;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+
         .pkg-icon-arch {
-            width: 56px;
-            height: 64px;
+            width: 58px;
+            height: 66px;
             border-radius: var(--arch-sm);
             background: rgba(212, 175, 55, 0.15);
             border: 1px solid var(--border-subtle);
             color: var(--gold-light);
             font-family: 'Amiri', serif;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-weight: 700;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
 
-        .pkg-card.featured .pkg-icon-arch {
+        .pkg-card.featured .pkg-icon-arch, .pkg-card[data-category="vip"] .pkg-icon-arch {
             background: var(--gold-gradient);
             color: #0c1811;
         }
 
         .pkg-tier-name {
-            font-size: 0.78rem;
+            font-size: 0.8rem;
             font-family: 'Cinzel', serif;
             letter-spacing: 0.16em;
             text-transform: uppercase;
@@ -1168,7 +1162,7 @@
         }
 
         .pkg-title {
-            font-size: 1.55rem;
+            font-size: 1.65rem;
             margin-bottom: 12px;
             color: var(--text-main);
         }
@@ -1181,31 +1175,32 @@
 
         .pkg-price {
             font-family: 'Amiri', serif;
-            font-size: 2.1rem;
+            font-size: 2.2rem;
             font-weight: 700;
             color: var(--gold-light);
             line-height: 1.1;
         }
 
         .pkg-price-note {
-            font-size: 0.8rem;
+            font-size: 0.82rem;
             color: var(--text-dim);
         }
 
         .pkg-desc {
-            font-size: 0.92rem;
+            font-size: 0.94rem;
             color: var(--text-muted);
-            margin-bottom: 20px;
+            margin-bottom: 22px;
+            line-height: 1.65;
         }
 
         .pkg-features {
-            margin-bottom: 30px;
+            margin-bottom: 32px;
             flex-grow: 1;
         }
 
         .pkg-features li {
-            padding: 8px 0;
-            font-size: 0.9rem;
+            padding: 9px 0;
+            font-size: 0.92rem;
             color: var(--text-main);
             display: flex;
             align-items: center;
@@ -1285,7 +1280,7 @@
         }
 
         /* ==========================================================================
-           10. TEAM & GUIDANCE LEADERSHIP (PHOTOS & CREDENTIALS)
+           10. TEAM & GUIDANCE LEADERSHIP (EXACT 2 MEMBERS)
            ========================================================================== */
         .team-section {
             padding: 130px 0;
@@ -1293,21 +1288,23 @@
             position: relative;
         }
 
-        .team-grid {
+        .team-grid-2 {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 32px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            max-width: 860px;
+            margin: 0 auto;
         }
 
         .team-card {
-            padding: 36px 28px;
+            padding: 42px 34px;
             text-align: center;
         }
 
         .team-photo-wrap {
             position: relative;
-            width: 140px;
-            height: 160px;
+            width: 150px;
+            height: 175px;
             margin: 0 auto 24px;
             border-radius: var(--arch);
             overflow: hidden;
@@ -1327,25 +1324,25 @@
         }
 
         .team-name {
-            font-size: 1.35rem;
+            font-size: 1.4rem;
             margin-bottom: 4px;
             color: var(--text-main);
         }
 
         .team-role {
             font-family: 'Cinzel', serif;
-            font-size: 0.8rem;
+            font-size: 0.82rem;
             font-weight: 700;
             color: var(--gold-base);
-            letter-spacing: 0.12em;
+            letter-spacing: 0.14em;
             text-transform: uppercase;
             margin-bottom: 14px;
         }
 
         .team-bio {
-            font-size: 0.92rem;
+            font-size: 0.94rem;
             color: var(--text-muted);
-            line-height: 1.65;
+            line-height: 1.68;
         }
 
         /* ==========================================================================
@@ -1869,7 +1866,9 @@
 
         @media (max-width: 1080px) {
             .pkg-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr;
+                max-width: 540px;
+                margin: 0 auto;
             }
             .svc-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -1887,6 +1886,10 @@
             .review-card {
                 flex: 0 0 calc(50% - 14px);
             }
+            .team-grid-2 {
+                grid-template-columns: 1fr;
+                max-width: 440px;
+            }
         }
 
         @media (max-width: 768px) {
@@ -1900,7 +1903,7 @@
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
             }
-            .pkg-grid, .team-grid, .gal-grid {
+            .pkg-grid, .team-grid-2, .gal-grid {
                 grid-template-columns: 1fr;
             }
             .svc-grid {
@@ -2139,100 +2142,73 @@
         </div>
     </section>
 
-    <!-- 4. PACKAGES SECTION -->
+    <!-- 4. PACKAGES SECTION (EXACTLY 3 PACKAGES) -->
     <section class="packages-section" id="packages">
         <div class="container">
             <div class="section-header center reveal-item">
                 <div class="eyebrow">Curated Umrah Packages</div>
                 <h2 class="section-title">Thoughtfully arranged <span class="shimmer-text">spiritual journeys</span></h2>
-                <p class="section-desc">Choose from our transparent, meticulously planned packages tailored for individuals, families, and groups.</p>
+                <p class="section-desc">Transparent, well-planned packages designed with utmost comfort, proximity to Haram, and trusted Aalims guidance.</p>
             </div>
 
             <!-- Category Switcher Tabs -->
             <div class="pkg-controls reveal-item">
                 <button class="pkg-tab active" data-filter="all">All Packages</button>
-                <button class="pkg-tab" data-filter="economy">Economy</button>
-                <button class="pkg-tab" data-filter="hilton">Hilton Comfort</button>
-                <button class="pkg-tab" data-filter="golden">Golden VIP</button>
+                <button class="pkg-tab" data-filter="economy">Economy Standard</button>
+                <button class="pkg-tab" data-filter="hilton">Hilton Package</button>
+                <button class="pkg-tab" data-filter="vip">VIP Package</button>
             </div>
 
-            <!-- Packages 3D Grid -->
+            <!-- Packages 3D Grid: Exactly 3 Packages -->
             <div class="pkg-grid">
 
-                <!-- Economy Tier -->
+                <!-- 1. Economy Standard Package -->
                 <div class="pkg-card tilt-card reveal-item" data-category="economy" data-tilt>
                     <div class="glare"></div>
                     <div>
                         <div class="pkg-icon-arch">E</div>
                         <div class="pkg-tier-name">Essential Umrah</div>
-                        <h3 class="pkg-title">Economy Package</h3>
+                        <h3 class="pkg-title">Economy Standard</h3>
                         <div class="pkg-price-wrap">
                             <div class="pkg-price">₹1,15,000</div>
                             <div class="pkg-price-note">per pilgrim · all-inclusive onboarding</div>
                         </div>
-                        <p class="pkg-desc">Covering all fundamental spiritual needs with complete peace of mind.</p>
+                        <p class="pkg-desc">Covering all fundamental spiritual and logistical needs with complete peace of mind.</p>
                         <ul class="pkg-features">
-                            <li>Visa stamping &amp; insurance</li>
-                            <li>Direct flight tickets</li>
-                            <li>Comfortable hotel stay</li>
-                            <li>AC coach transfers in Saudi</li>
-                            <li>Complete Ziyarath guidance</li>
-                            <li>Respected Aalims escort</li>
+                            <li>Visa stamping &amp; Saudi insurance</li>
+                            <li>Direct group flight tickets</li>
+                            <li>Comfortable hotel accommodation</li>
+                            <li>Sanitized AC coach transfers in Saudi</li>
+                            <li>Historical Ziyarath guidance</li>
+                            <li>Respected Aalims religious escort</li>
                         </ul>
                     </div>
                     <div class="pkg-actions">
                         <a class="btn btn-gold btn-sm" href="#contact">Book Inquiry</a>
-                        <a class="btn btn-glass btn-sm" href="https://wa.me/918608724931?text=Assalamu%20Alaikum%2C%20I%20am%20interested%20in%20Economy%20Package%20details." target="_blank" rel="noopener">WhatsApp</a>
+                        <a class="btn btn-glass btn-sm" href="https://wa.me/918608724931?text=Assalamu%20Alaikum%2C%20I%20am%20interested%20in%20Economy%20Standard%20Package%20details." target="_blank" rel="noopener">WhatsApp</a>
                     </div>
                 </div>
 
-                <!-- Standard / Semi-Deluxe Tier -->
-                <div class="pkg-card tilt-card reveal-item" data-category="economy" data-tilt>
-                    <div class="glare"></div>
-                    <div>
-                        <div class="pkg-icon-arch">S</div>
-                        <div class="pkg-tier-name">Comfort Tier</div>
-                        <h3 class="pkg-title">Standard Package</h3>
-                        <div class="pkg-price-wrap">
-                            <div class="pkg-price">₹1,30,000</div>
-                            <div class="pkg-price-note">per pilgrim · onward</div>
-                        </div>
-                        <p class="pkg-desc">Ideal balance of comfort, proximity to Haram, and family care.</p>
-                        <ul class="pkg-features">
-                            <li>Express visa clearance</li>
-                            <li>Direct group flights</li>
-                            <li>Closer hotel to Haram</li>
-                            <li>Buffet food arrangement</li>
-                            <li>Historical Ziyarath tour</li>
-                            <li>Dedicated Aalims support</li>
-                        </ul>
-                    </div>
-                    <div class="pkg-actions">
-                        <a class="btn btn-gold btn-sm" href="#contact">Book Inquiry</a>
-                        <a class="btn btn-glass btn-sm" href="https://wa.me/918608724931?text=Assalamu%20Alaikum%2C%20I%20am%20interested%20in%20Standard%20Package%20details." target="_blank" rel="noopener">WhatsApp</a>
-                    </div>
-                </div>
-
-                <!-- Hilton / Premium Tier -->
+                <!-- 2. Hilton Package (Most Popular) -->
                 <div class="pkg-card featured tilt-card reveal-item" data-category="hilton" data-tilt>
                     <span class="pkg-badge">Most Popular</span>
                     <div class="glare"></div>
                     <div>
                         <div class="pkg-icon-arch">H</div>
-                        <div class="pkg-tier-name">Star Luxury</div>
+                        <div class="pkg-tier-name">5-Star Comfort</div>
                         <h3 class="pkg-title">Hilton Package</h3>
                         <div class="pkg-price-wrap">
                             <div class="pkg-price">₹1,45,000</div>
                             <div class="pkg-price-note">per pilgrim · premium stay</div>
                         </div>
-                        <p class="pkg-desc">Premium 5-star comfort and walking proximity for elders &amp; families.</p>
+                        <p class="pkg-desc">Premium 5-star comfort and walking proximity to the Haram for elders &amp; families.</p>
                         <ul class="pkg-features">
-                            <li>Priority visa assistance</li>
-                            <li>Premium airline tickets</li>
-                            <li>Hilton / 5-star hotel near Haram</li>
-                            <li>Special South Indian &amp; Arabian buffet</li>
-                            <li>VIP AC bus transit</li>
-                            <li>Continuous Aalims guidance</li>
+                            <li>Priority express visa processing</li>
+                            <li>Premium direct airline tickets</li>
+                            <li>Hilton / 5-Star luxury hotel near Haram</li>
+                            <li>Special South Indian &amp; Arabian buffet meals</li>
+                            <li>VIP AC bus transit &amp; luggage care</li>
+                            <li>Continuous scholarly Aalims escort</li>
                         </ul>
                     </div>
                     <div class="pkg-actions">
@@ -2241,30 +2217,31 @@
                     </div>
                 </div>
 
-                <!-- Golden VIP Tier -->
-                <div class="pkg-card tilt-card reveal-item" data-category="golden" data-tilt>
+                <!-- 3. VIP Package (Direct Enquiry) -->
+                <div class="pkg-card tilt-card reveal-item" data-category="vip" data-tilt>
+                    <span class="pkg-badge vip">VIP Royal</span>
                     <div class="glare"></div>
                     <div>
-                        <div class="pkg-icon-arch">G</div>
-                        <div class="pkg-tier-name">VIP Royal Tier</div>
-                        <h3 class="pkg-title">Golden Package</h3>
+                        <div class="pkg-icon-arch">V</div>
+                        <div class="pkg-tier-name">Royal VIP Tier</div>
+                        <h3 class="pkg-title">VIP Package</h3>
                         <div class="pkg-price-wrap">
-                            <div class="pkg-price">Custom VIP</div>
-                            <div class="pkg-price-note">tailored luxury itinerary</div>
+                            <div class="pkg-price">Direct Enquiry</div>
+                            <div class="pkg-price-note">tailored luxury quotation</div>
                         </div>
-                        <p class="pkg-desc">Supreme luxury, Haram-view suites, and private customized transport.</p>
+                        <p class="pkg-desc">Supreme luxury, Haram-view suites, private GMC transport, and personalized religious escort.</p>
                         <ul class="pkg-features">
-                            <li>Instant priority visa</li>
-                            <li>Business / Direct flight class</li>
-                            <li>Haram-facing luxury suites</li>
-                            <li>Private luxury GMC transport</li>
-                            <li>Personalized private Ziyarath</li>
-                            <li>Dedicated scholar guidance</li>
+                            <li>Instant priority VIP electronic visa</li>
+                            <li>Business / First Class flight options</li>
+                            <li>Haram-facing presidential luxury suites</li>
+                            <li>Private VIP GMC vehicle for all transit</li>
+                            <li>Exclusive personalized Ziyarath tour</li>
+                            <li>Dedicated 1-on-1 scholar guidance</li>
                         </ul>
                     </div>
                     <div class="pkg-actions">
-                        <a class="btn btn-gold btn-sm" href="#contact">Contact for VIP</a>
-                        <a class="btn btn-glass btn-sm" href="https://wa.me/918608724931?text=Assalamu%20Alaikum%2C%20I%20am%20interested%20in%20Golden%20VIP%20Package%20details." target="_blank" rel="noopener">WhatsApp</a>
+                        <a class="btn btn-gold btn-sm" href="#contact">Direct Enquiry</a>
+                        <a class="btn btn-glass btn-sm" href="https://wa.me/918608724931?text=Assalamu%20Alaikum%2C%20I%20am%20inquiring%20about%20the%20VIP%20Custom%20Package." target="_blank" rel="noopener">WhatsApp VIP</a>
                     </div>
                 </div>
 
@@ -2341,17 +2318,17 @@
         </div>
     </section>
 
-    <!-- 6. TEAM & SCHOLAR GUIDANCE -->
+    <!-- 6. TEAM & SCHOLAR GUIDANCE (EXACT 2 LEADERS) -->
     <section class="team-section" id="team">
         <div class="container">
             <div class="section-header center reveal-item">
                 <div class="eyebrow">Religious &amp; Executive Leadership</div>
-                <h2 class="section-title">Guided by respected <span class="shimmer-text">Aalims &amp; experienced elders</span></h2>
-                <p class="section-desc">Our teams ensure rituals are performed according to the authentic Sunnah with disciplined management.</p>
+                <h2 class="section-title">Guided by respected <span class="shimmer-text">Aalims &amp; experienced leadership</span></h2>
+                <p class="section-desc">Our leadership ensures rituals are performed according to the authentic Sunnah with disciplined management.</p>
             </div>
 
-            <div class="team-grid">
-                <!-- Guide 1 -->
+            <div class="team-grid-2">
+                <!-- Guide 1: Hafiz Hayathutheen Yousufi Aalim -->
                 <div class="team-card tilt-card reveal-item" data-tilt>
                     <div class="glare"></div>
                     <div class="team-photo-wrap">
@@ -2362,18 +2339,7 @@
                     <p class="team-bio">Provides scholarly Islamic guidance and step-by-step coaching for every ritual throughout the sacred pilgrimage.</p>
                 </div>
 
-                <!-- Guide 2 -->
-                <div class="team-card tilt-card reveal-item" data-tilt>
-                    <div class="glare"></div>
-                    <div class="team-photo-wrap">
-                        <img src="assets/WhatsApp Image 2026-06-17 at 6.04.12 PM.jpg" alt="Mylapore Haji Adam Basha">
-                    </div>
-                    <h3 class="team-name">Mylapore Haji Adam Basha</h3>
-                    <div class="team-role">Senior Operations Coordinator</div>
-                    <p class="team-bio">Decades of on-ground experience coordinating groups, logistics, and family support across Saudi Arabia.</p>
-                </div>
-
-                <!-- Guide 3 -->
+                <!-- Guide 2: Mohamed Thariq H -->
                 <div class="team-card tilt-card reveal-item" data-tilt>
                     <div class="glare"></div>
                     <div class="team-photo-wrap">
@@ -2381,7 +2347,7 @@
                     </div>
                     <h3 class="team-name">Mohamed Thariq H</h3>
                     <div class="team-role">Assistant Manager &amp; Lead Support</div>
-                    <p class="team-bio">Spearheads custom package planning, pilgrim documentation, ticket management, and 24/7 communications.</p>
+                    <p class="team-bio">Spearheads custom package planning, pilgrim documentation, ticket management, and 24/7 on-ground assistance.</p>
                 </div>
             </div>
         </div>
@@ -2539,15 +2505,6 @@
                         </div>
 
                         <div class="contact-card-item tilt-card" data-tilt>
-                            <div class="contact-icon">👤</div>
-                            <div>
-                                <h4>Mylapore Haji Adam Basha — Senior Coordinator</h4>
-                                <p>Operations &amp; Group Travel Coordinator</p>
-                                <p><a href="tel:+919840397405">+91 9840397405</a></p>
-                            </div>
-                        </div>
-
-                        <div class="contact-card-item tilt-card" data-tilt>
                             <div class="contact-icon">🕌</div>
                             <div>
                                 <h4>Hafiz Hayathutheen Yousufi Aalim</h4>
@@ -2572,7 +2529,7 @@
                     </div>
                 </div>
 
-                <!-- Inquiry Form -->
+                <!-- Inquiry Form: Updated with 3 Packages -->
                 <div class="form-box tilt-card reveal-item" data-tilt>
                     <div class="glare"></div>
                     <h3 style="font-size: 1.6rem; margin-bottom: 6px; color: var(--text-main);">Submit an Inquiry</h3>
@@ -2598,11 +2555,10 @@
                                 <label for="fPkg">Package Preference *</label>
                                 <select id="fPkg" class="form-control" required>
                                     <option value="">Select a package</option>
-                                    <option value="Economy Package (₹1,15,000)">Economy Package (₹1,15,000)</option>
-                                    <option value="Standard Package (₹1,30,000)">Standard Package (₹1,30,000)</option>
-                                    <option value="Hilton 5-Star (₹1,45,000)">Hilton 5-Star Package (₹1,45,000)</option>
-                                    <option value="Golden VIP Custom">Golden VIP Custom Package</option>
-                                    <option value="Need Guidance / Not Decided">Need Guidance from Aalim</option>
+                                    <option value="Economy Standard Package (₹1,15,000)">Economy Standard Package (₹1,15,000)</option>
+                                    <option value="Hilton Package (₹1,45,000)">Hilton Package (₹1,45,000)</option>
+                                    <option value="VIP Package (Direct Enquiry)">VIP Package (Direct Enquiry)</option>
+                                    <option value="Need Guidance from Aalim">Need Guidance from Aalim</option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -2659,7 +2615,6 @@
                     <h4>Direct Contacts</h4>
                     <ul class="footer-links">
                         <li>Mohamed Thariq H<br><a href="tel:+918608724931">+91 8608724931</a></li>
-                        <li>Mylapore Haji Adam Basha<br><a href="tel:+919840397405">+91 9840397405</a></li>
                         <li>Hafiz Hayathutheen Yousufi Aalim<br><a href="tel:+919655371713">+91 9655371713</a></li>
                     </ul>
                 </div>
@@ -2743,7 +2698,7 @@
             });
         }
 
-        // 2. FIXED MOBILE DRAWER NAVIGATION (TESTED & FIXED)
+        // 2. FIXED MOBILE DRAWER NAVIGATION
         const burgerBtn = document.getElementById('burgerBtn');
         const mobileDrawer = document.getElementById('mobileDrawer');
         const scrim = document.getElementById('scrim');
@@ -2848,7 +2803,7 @@
             });
         }
 
-        // 6. INTERACTIVE PACKAGE TIER FILTERING
+        // 6. INTERACTIVE PACKAGE TIER FILTERING (3 PACKAGES: economy, hilton, vip)
         const pkgTabs = document.querySelectorAll('.pkg-tab');
         const pkgCards = document.querySelectorAll('.pkg-card');
 
