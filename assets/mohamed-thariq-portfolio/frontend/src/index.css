@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #050816;
+  color: #f8fafc;
+}
+
+.glass {
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  backdrop-filter: blur(18px);
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold tracking-tight;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-cyan-300 via-blue-300 to-violet-300 bg-clip-text text-transparent;
+}
