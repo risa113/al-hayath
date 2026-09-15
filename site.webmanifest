@@ -1,0 +1,21 @@
+﻿{
+  "name": "Al-Hayath Haj and Umrah Service",
+  "short_name": "Al-Hayath",
+  "description": "Luxury and Trusted Haj and Umrah Packages from Tirunelveli",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06110c",
+  "theme_color": "#06110c",
+  "icons": [
+    {
+      "src": "assets/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

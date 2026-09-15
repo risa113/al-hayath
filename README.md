@@ -1,6 +1,6 @@
 # Al-Hayath Haj & Umrah Service — Luxury Web Experience 🕋
 
-> **Trusted Haj and Umrah travel service from Tamil Nadu (Tirunelveli & Chennai)** with direct flights, luxury star hotel stays near Haram, VIP Saudi coach transit, and religious escort by respected Aalims.
+> **Trusted Haj and Umrah travel service based in Melapalayam, Tirunelveli** with direct flights, luxury star hotel stays near Haram, VIP Saudi coach transit, and religious escort by respected Aalims.
 
 ---
 
@@ -25,7 +25,7 @@ Toggle between 4 luxury color palettes in real-time with smooth CSS variable tra
 - **Ambient 3D Gold Dust Particles**: HTML5 Canvas particle system generating soft golden dust particles.
 
 ### 4. 🎠 Super Animated Slide Cards & Carousels
-- **Interactive Package Showcase**: Filter by tier (*Economy*, *Standard*, *Hilton 5-Star*, *Golden VIP*) with smooth card transitions.
+- **Interactive Package Showcase**: Filter by tier (*Economy Standard*, *Hilton*, *VIP Package*) with smooth card transitions.
 - **Interactive Testimonials Carousel**: Multi-card responsive slider with auto-play, swipe/drag, pause-on-hover, prev/next glass buttons, and gold indicator dots.
 - **Journey Gallery Lightbox**: Responsive photo gallery with hover zoom and full-screen image preview modal.
 - **Animated Statistics Counter**: Numbers count up dynamically as the user scrolls into view.
@@ -40,38 +40,15 @@ Toggle between 4 luxury color palettes in real-time with smooth CSS variable tra
 
 ---
 
-## 🚀 Live Port / GitHub Pages Deployment Guide
+## 🚀 Deployment
 
-To deploy this website live on GitHub Pages:
-
-### Step 1: Initialize & Commit
-```bash
-git init
-git add .
-git commit -m "feat: Luxury redesign with 4-way themes, 3D animations, fixed mobile nav & WhatsApp builder"
-```
-
-### Step 2: Connect to your GitHub Repository
-```bash
-git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPOSITORY_NAME>.git
-git branch -M main
-git push -u origin main
-```
-
-### Step 3: Enable GitHub Pages
-1. Go to your repository on GitHub.
-2. Click **Settings** > **Pages** (in the left sidebar).
-3. Under **Branch**, select `main` (or `master`) and folder `/ (root)`.
-4. Click **Save**.
-5. Your website will be live in ~1 minute at `https://<YOUR_GITHUB_USERNAME>.github.io/<YOUR_REPOSITORY_NAME>/`!
+Connected with GitHub repository (`https://github.com/risa113/al-hayath.git`) and automatically deployed to Netlify.
 
 ---
 
 ## 👥 Management & Guidance Team
 - **Hafiz Hayathutheen Yousufi Aalim** — Chief Religious Guide (`+91 9655371713`)
-- **Mylapore Haji Adam Basha** — Senior Operations Coordinator (`+91 9840397405`)
 - **Mohamed Thariq H** — Assistant Manager (`+91 8608724931`)
 
-**Branch Offices:**
-- **Office 1:** Melapalayam, Tirunelveli, Tamil Nadu
-- **Office 2:** New No 111, 1st Floor, Dr. Natesan Road, Triplicane, Chennai - 600005
+**Head Office:**
+- Periya Theru, Melapalayam, Tirunelveli, Tamil Nadu - 627005
